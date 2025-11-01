@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Loops</title>
+  <style>
+    body { background: url("night.png") center/cover no-repeat; color: white; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    a.back { color: #00d4ff; text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    pre { background: rgba(0,0,0,0.6); padding: 15px; border-radius: 10px; overflow-x: auto; }
+    h1 { color: #03dac6; }
+    .exercise { background-color: rgba(0,0,0,0.6); padding: 15px; border-radius: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back">← Back to Home</a>
+  <h1>Java Loops (while & for)</h1>
+  <p>
+    Loops allow you to repeat actions multiple times.  
+    The two most common loops are <b>while</b> and <b>for</b>.
+  </p>
+
+  <h2>While Loop Example:</h2>
+  <pre><code>
+public class WhileExample {
+  public static void main(String[] args) {
+    int count = 1;
+
+    while (count <= 5) {
+      System.out.println("Count: " + count);
+      count++;
+    }
+  }
+}
+  </code></pre>
+
+  <h2>For Loop Example:</h2>
+  <pre><code>
+public class ForExample {
+  public static void main(String[] args) {
+    for (int i = 1; i <= 5; i++) {
+      System.out.println("Number: " + i);
+    }
+  }
+}
+  </code></pre>
+
+  <div class="exercise">
+    <h2>Try This:</h2>
+    <p>Write a loop that prints your name 10 times. Then modify it to count down from 10 to 1.</p>
+  </div>
+</body>
+</html>

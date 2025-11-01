@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Scanner</title>
+  <style>
+    body { background: url("night.png") center/cover no-repeat; color: white; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    a.back { color: #00d4ff; text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    pre { background: rgba(0,0,0,0.6); padding: 15px; border-radius: 10px; overflow-x: auto; }
+    h1 { color: #03dac6; }
+    .exercise { background-color: rgba(0,0,0,0.6); padding: 15px; border-radius: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back">← Back to Home</a>
+  <h1>Java Scanner</h1>
+  <p>
+    The <code>Scanner</code> class allows the user to input data from the keyboard.
+    It is part of the <code>java.util</code> package.
+  </p>
+
+  <h2>Example:</h2>
+  <pre><code>
+import java.util.Scanner;
+
+public class ScannerExample {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter your name: ");
+    String name = input.nextLine();
+
+    System.out.print("Enter your age: ");
+    int age = input.nextInt();
+
+    System.out.println("Hello, " + name + "! You are " + age + " years old.");
+  }
+}
+  </code></pre>
+
+  <div class="exercise">
+    <h2>Try This:</h2>
+    <p>Ask the user for their name, age, and favorite color. Print a message that uses all three values.</p>
+  </div>
+</body>
+</html>
